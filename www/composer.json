@@ -1,0 +1,16 @@
+{
+    "name": "raphael-vidal/design-patterns",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "RaphaelVidal\\DesignPatterns\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Raphael Vidal",
+            "email": "raphael.r.vidal@gmail.com"
+        }
+    ],
+    "require": {}
+}

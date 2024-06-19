@@ -1,0 +1,8 @@
+services:
+ php:
+  build:
+    context: ./
+    dockerfile: Dockerfile
+  container_name: php-fpm-design-pattern
+  volumes:
+  - ./www:/var/www/html/
