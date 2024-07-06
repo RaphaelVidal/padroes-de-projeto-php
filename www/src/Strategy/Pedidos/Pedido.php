@@ -10,11 +10,6 @@ class Pedido {
     private float $peso;
     private float $distancia;
 
-    /**
-     * @param float $peso
-     * @param float $distancia
-     * @return void
-     */
     public function __construct(float $peso, float $distancia)
     {
         $this->peso = $peso;
