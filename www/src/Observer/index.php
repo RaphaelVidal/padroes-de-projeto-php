@@ -4,6 +4,13 @@ use RaphaelVidal\DesignPatterns\Observer\Sujeitos\Pedido;
 use RaphaelVidal\DesignPatterns\Observer\Observadores\EmailNotifier;
 use RaphaelVidal\DesignPatterns\Observer\Observadores\RelatorioGerador;
 
+/*
+    Uso do Observer
+    Um pedido é criado, e os observadores são anexados a ele. Quando o estado do pedido é atualizado,
+    todos os observadores são notificados automaticamente.
+    Demonstramos como adicionar, notificar e remover observadores.
+*/
+
 // Cria um pedido
 $pedido = new Pedido(1);
 

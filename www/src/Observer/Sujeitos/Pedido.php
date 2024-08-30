@@ -5,6 +5,11 @@ namespace RaphaelVidal\DesignPatterns\Observer\Sujeitos;
 use RaphaelVidal\DesignPatterns\Observer\Interfaces\Sujeito;
 use RaphaelVidal\DesignPatterns\Observer\Interfaces\Observador;
 
+/*
+    Implementação concreta do Sujeito para pedidos.
+    A classe Pedido mantém uma lista de observadores e notifica
+    todos os observadores registrados quando o status do pedido é atualizado.
+*/
 class Pedido implements Sujeito {
     private $id;
     private $status;
