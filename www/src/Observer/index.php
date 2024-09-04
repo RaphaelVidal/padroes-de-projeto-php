@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/../../vendor/autoload.php';
+
 use RaphaelVidal\DesignPatterns\Observer\Sujeitos\Pedido;
 use RaphaelVidal\DesignPatterns\Observer\Observadores\EmailNotifier;
 use RaphaelVidal\DesignPatterns\Observer\Observadores\RelatorioGerador;
