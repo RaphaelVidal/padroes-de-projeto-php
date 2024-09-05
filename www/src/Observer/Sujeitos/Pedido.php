@@ -7,8 +7,9 @@ use RaphaelVidal\DesignPatterns\Observer\Interfaces\Observador;
 
 /*
     Implementação concreta do Sujeito para pedidos.
-    A classe Pedido mantém uma lista de observadores e notifica
-    todos os observadores registrados quando o status do pedido é atualizado.
+    A classe Pedido mantém uma lista de observadores
+    e notifica todos os observadores registrados 
+    quando o status do pedido é atualizado.
 */
 class Pedido implements Sujeito {
     private $id;
@@ -30,7 +31,8 @@ class Pedido implements Sujeito {
 
     public function setStatus($status) {
         $this->status = $status;
-        $this->notificarObservadoresMudancaStatus(); // Notifica todos os observadores sobre a mudança de status
+        $this->notificarObservadoresMudancaStatus();
+        // Notifica todos os observadores sobre a mudança de status
     }
 
     public function adicionarNovoObservador(Observador $observer) {

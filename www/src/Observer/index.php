@@ -8,9 +8,9 @@ use RaphaelVidal\DesignPatterns\Observer\Observadores\RelatorioGerador;
 
 /*
     Uso do Observer
-    Um pedido é criado, e os observadores são anexados a ele. Quando o estado do pedido é atualizado,
-    todos os observadores são notificados automaticamente.
-    Demonstramos como adicionar, notificar e remover observadores.
+    Um pedido é criado, e os observadores são anexados a ele.
+    Quando o estado do pedido é atualizado, todos os observadores
+    são notificados automaticamente.
 */
 
 // Cria um pedido
@@ -23,10 +23,6 @@ $relatorioGerador = new RelatorioGerador();
 // Anexa os observadores ao pedido
 $pedido->adicionarNovoObservador($emailNotifier);
 $pedido->adicionarNovoObservador($relatorioGerador);
-
-// Atualiza o status do pedido
-echo "Atualizando o status do pedido para 'Processando'...\n";
-$pedido->setStatus('Processando');
 
 // Atualiza novamente o status do pedido
 echo "Atualizando o status do pedido para 'Enviado'...\n";
