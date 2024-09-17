@@ -1,2 +1,2 @@
 # padroes-de-projeto-php
-Exemplos práticos de padrões de projeto em PHP
+Exemplos práticos de padrões de projeto em PHP.
